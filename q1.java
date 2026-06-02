@@ -161,6 +161,19 @@ student_percentage= (sum/5.0f)*100;
 if(student_percentage>=40.0f)  //  x.0**"f"**     is necessary to wirte since java is expanding lanuguage 
 System.out.println("pass");
 else System.out.println("fail");
+
+//(**missed**)q10-> Write a program to swap two numbers using a without using third variable.
+int num1,num2;
+System.out.println("The following program swaps two numbers using minimum space \n");
+System.out.println("Enter num1 and num2 respectively \n");
+num1=numins.nextInt();
+num2=numins.nextInt();
+
+num1=num1+num2;
+num2=num1-num2;
+num1=num1-num2;
+
+System.out.println("num1 = "+num1+"\nnum2="+num2);
 }
 
 }

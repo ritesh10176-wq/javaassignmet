@@ -84,29 +84,33 @@ boolean running = true;
 while (running) {
     System.out.println("Enter your number : ");
     numcacl1=numins.nextInt();
-    System.out.println("Select your operation (+, -, *, /, %) ");
+    System.out.println("Select your operation (+, -, *, /, %) or press 0e to EXIT");
     optr=stringins.nextLine();
     System.out.println("Enter your number : ");
     numcacl2=numins.nextInt();
     switch(optr){
-        case "+" : System.out.println("="+(numcacl1+numcacl2)+"\n"+"Enter 0 to END\n"); 
+        case "+" : System.out.println("="+(numcacl1+numcacl2)+"\n"); 
                  break;
-        case "-" : System.out.println("="+(numcacl1-numcacl2)+"\n"+"Enter 0 to END\n"); 
+        case "-" : System.out.println("="+(numcacl1-numcacl2)+"\n"); 
                  break;  
-        case "*" : System.out.println("="+(numcacl1*numcacl2)+"\n"+"Enter 0 to END\n"); 
+        case "*" : System.out.println("="+(numcacl1*numcacl2)+"\n"); 
                  break;     
-        case "/" : System.out.println("="+(numcacl1/numcacl2)+"\n"+"Enter 0 to END\n"); 
+        case "/" : System.out.println("="+(numcacl1/numcacl2)+"\n"); 
                  break;           
-        case "%" :System.out.println("="+(numcacl1%numcacl2)+"\n"+"Enter 0 to END\n"); 
+        case "%" :System.out.println("="+(numcacl1%numcacl2)+"\n"); 
                  break;       
-        case "0" :System.out.println("program ENDS");
+        case "0e" :System.out.println("program ENDS");
                   running=false;    
                   break;      
                 
         default  :System.out.println("Input selection is Invalid !\nplease select the operator as required  ");
-    }
+    }System.out.println("\n");
 
 }
+System.out.println();
+System.out.println();
+System.out.println();
+
 //q->6 Write a program to calculate the area and perimeter of a rectangle using operators.
 
  System.out.println("The following code calculates area of rectangle");

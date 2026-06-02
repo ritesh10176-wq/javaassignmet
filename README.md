@@ -1,14 +1,25 @@
 Data Type Programs
 q1->Write a program to declare and display all primitive data types (byte, short, int, long, float, double, char, boolean).
+
 q2->Write a program to take an integer input from the user and display its square and cube.
+
 q3->Write a program to store your name, age, and percentage using appropriate data types and display them.
+
 q4->Write a program to swap two numbers using a third variable.
+
 Operator Programs
 q5->Write a program to perform all arithmetic operations (+, -, *, /, %) on two numbers.
+
 q6->Write a program to calculate the area and perimeter of a rectangle using operators.
+
 q7->Write a program to check whether a number is even or odd using the modulus operator.
+
 q8->Write a program to find the largest of two numbers using the relational operator and if statement.
+
 q9->Write a program to calculate the percentage of 5 subjects and display whether the student passed or failed (pass marks = 40%).
+
+q10->Write a program to swap two numbers without using a third variable.
+
 
 q1 -> output 
 <img width="531" height="175" alt="image" src="https://github.com/user-attachments/assets/ed953267-0bf6-4e17-a794-0c433167d946" />
@@ -28,6 +39,8 @@ q8->output
 <img width="533" height="129" alt="image" src="https://github.com/user-attachments/assets/fda88336-9df0-440e-924d-c7bfd04c0387" />
 q9->output
 <img width="517" height="206" alt="image" src="https://github.com/user-attachments/assets/35db1b7c-1c53-4d12-83b2-b9d9ddc4cf27" />
+q10->output
+<img width="592" height="139" alt="image" src="https://github.com/user-attachments/assets/6fcea9d7-3d75-4da8-ba46-e5cade7f1bfc" />
 
 
 

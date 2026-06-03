@@ -46,7 +46,7 @@ public class javaloops3{
     System.out.println("10. Number Guessing Pattern  ,\nPrint all numbers from 1 to N:- \nIf divisible by 3 -> print \"Fizz\" ,If divisible by 5 -> print \"Buzz\" ,\nIf divisible by both -> print \"FizzBuzz\" ,\nOtherwise print the number ");
     n=in.nextInt();
     numguess_pattern(n);
-    
+
     in.close();
     }
 
@@ -82,11 +82,11 @@ public class javaloops3{
         sizeofn=countnum_len(n);
         for(int i =1;i<=sizeofn;i++){
         int k = n%10;
-        revdigit+=k;
         revdigit*=10;
+        revdigit+=k;
         n/=10;
         }
-        return revdigit/10;
+        return revdigit;
     }
     public static void palindromechecker(int n){
     int revdigit1=reversedigit(n);
@@ -99,7 +99,7 @@ public class javaloops3{
         int ncopy1=n,armstrong_sum=0;
         for(int i=0;ncopy1>0;++i){
             int temp =ncopy1%10;
-            armstrong_sum = (int)Math.pow(temp,i);
+            armstrong_sum += (int)Math.pow(temp,i); //
             ncopy1/=10;
         }
         if(armstrong_sum==n)System.out.println("Given number is an Armstrong number");
@@ -115,12 +115,15 @@ public class javaloops3{
     }
     public static void checkprime(int n){
         boolean isprime = true;
+        if(n==0||n==1)System.out.println("Enterd number is not prime\\n");
+        else{
         for(int i=2;i*i<=n;i++){
         if(n%i==0)isprime=false;
         }
         if(isprime)
         System.out.println("Enterd number is prime\n");
         else System.out.println("Enter number is not prime\n");  
+         } 
     }
     public static void countdigitw_nature(int n){
         int ncopy=n,oddcount=0,evencount=0;
@@ -141,17 +144,10 @@ public class javaloops3{
     }
     public static void numguess_pattern(int n){
     for(int i=1;i<=n;i++){
-        if(i%3==0&&i%5!=0){System.out.print("Fizz");
-            continue;
-        }
-        else if(i%5==0&&i%3!=0){System.out.print("Buzz");
-            continue;
-        }
-        else if(i%5==0&&i%3==0){System.out.print("FizzBuzz");
-            continue;
-        }
-        else
-        System.out.print(i);
+        if(i%3==0&&i%5!=0){System.out.print("Fizz");}
+        else if(i%5==0&&i%3!=0){System.out.print("Buzz");}
+        else if(i%5==0&&i%3==0){System.out.print("FizzBuzz");}
+        else System.out.print(i);
         
     }
     }

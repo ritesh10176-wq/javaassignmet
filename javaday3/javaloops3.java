@@ -61,7 +61,7 @@ public class javaloops3{
     }
     public static int countnum_len(int num){
         int lenofnum=0;
-        for(int i =0;num>0;i++){
+        while(num>0){
         lenofnum++;
         num/=10;
         }
@@ -97,9 +97,10 @@ public class javaloops3{
     }
     public static void isarmstrong_checker(int n){
         int ncopy1=n,armstrong_sum=0;
-        for(int i=0;ncopy1>0;++i){
+        int numLen=countnum_len(n);
+        while(ncopy1>0){
             int temp =ncopy1%10;
-            armstrong_sum += (int)Math.pow(temp,i); //
+            armstrong_sum += (int)Math.pow(temp,numLen); //
             ncopy1/=10;
         }
         if(armstrong_sum==n)System.out.println("Given number is an Armstrong number");
@@ -127,7 +128,7 @@ public class javaloops3{
     }
     public static void countdigitw_nature(int n){
         int ncopy=n,oddcount=0,evencount=0;
-        for(int i=0;ncopy>0;i++){
+        while(ncopy>0){
             int temp = ncopy%10;
             if((temp&1)==1)oddcount++;
             else evencount++;

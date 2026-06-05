@@ -309,6 +309,7 @@ for(int i=0;i<mergedArrSize;i++ ){
 }
 }
 public static void arrayRotateLeft(int K,int arrSize,int arr[]){
+  if(arrSize==1) return;
   int Kcopy=K-1; // edge case**
   for(int i=0;i<K/2;i++){  //Rotates first k elements
     int temp = arr[i];

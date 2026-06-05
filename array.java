@@ -236,7 +236,7 @@ public class array {
   int maxpos = arrayMaxPos(arrSize, arr);
   int _2ndmax=0;
   int _2ndmaxindex=0;
-
+if(arrSize==1){return arr[0];}
   if(maxpos==0){
   _2ndmax=arr[maxpos+1];
   _2ndmaxindex=maxpos+1;     // learn this edge case**

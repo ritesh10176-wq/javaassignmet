@@ -9,7 +9,7 @@ public class array {
                        
     /**1. Input and Display Array Elements ,Takes N elements as input and display them.*/  
     System.out.println("\nQ1-> Input and Display Array Elements ,Takes N elements as input and display them."); 
-    System.out.println("Enter Size of contigous memory block needed (Type int block) : ");
+    System.out.print("Enter Size of contigous memory block needed (Type int block) : ");
     int arrSize=in.nextInt();
      int []arr= new int[arrSize];
     createArray(arrSize,arr); 
@@ -212,7 +212,9 @@ public class array {
   public static int lSearch(int arrSize,int arr[],int key){
     int flaggedpos=-1;
     for(int i=0;i<arrSize;i++){
-      if(arr[i]==key)flaggedpos=i;                               // Time complexity O(n)
+      if(key==arr[i])
+        {flaggedpos=i;  
+         break;     }                                             // Time complexity O(n)
     }
   return flaggedpos;
  }

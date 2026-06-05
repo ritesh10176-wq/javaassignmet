@@ -40,10 +40,11 @@ Output:
 1 → 2 times
 2 → 2 times
 3 → 1 time
-14. Merge Two Arrays
+
+13. Merge Two Arrays
 Take two arrays and merge them into a third array.
 
-15. Left Rotate and Right Rotate Array
+14. Left Rotate and Right Rotate Array
 Rotate the array by K positions.
 Example:
 [1,2,3,4,5]

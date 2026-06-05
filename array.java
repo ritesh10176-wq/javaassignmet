@@ -111,7 +111,7 @@ public class array {
     System.out.println("\nQ14-> Left Rotate and Right Rotate Array ,Rotates the array by K positions.");
     System.out.println("\nArray before roation");
     displayArray(arrSize,arr);
-    System.out.print("Enter value of K  to rotate left (possible 0 -"+arrSize+")");
+    System.out.print("Enter value of K  to rotate left (possible 0 -"+arrSize+") : ");
     int K=-1;
     while(K<0||K>arrSize-1){
     K = in.nextInt();
